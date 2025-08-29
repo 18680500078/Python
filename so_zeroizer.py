@@ -1,4 +1,40 @@
-https://github.com/18680500078/Python/blob/main/so_zeroizer.py            ""
+#!/usr/bin/env python3
+import sys
+import os
+import mmap
+import time
+from datetime import datetime
+
+class Colors:
+    """ANSI颜色代码"""
+    RED = '\033[91m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    BLUE = '\033[94m'
+    MAGENTA = '\033[95m'
+    CYAN = '\033[96m'
+    WHITE = '\033[97m'
+    BOLD = '\033[1m'
+    END = '\033[0m'
+
+class ArtDisplay:
+    """艺术显示类"""
+    @staticmethod
+    def show_welcome():
+        """显示艺术欢迎界面"""
+        os.system('clear' if os.name == 'posix' else 'cls')
+        
+        welcome_art = [
+            f"{Colors.CYAN}╔══════════════════════════════════════════════════╗{Colors.END}",
+            f"{Colors.CYAN}║                                                  ║{Colors.END}",
+            f"{Colors.MAGENTA}║              🎭 辉少专用广告去除 🎭              ║{Colors.END}",
+            f"{Colors.CYAN}║                                                  ║{Colors.END}",
+            f"{Colors.CYAN}║          𝘽 𝙞 𝙣 𝙖 𝙧 𝙮   𝘼 𝙧 𝙩   𝙎 𝙩 𝙪 𝙙 𝙞 𝙤          ║{Colors.END}",
+            f"{Colors.CYAN}║                                                  ║{Colors.END}",
+            f"{Colors.CYAN}╚══════════════════════════════════════════════════╝{Colors.END}",
+            "",
+            f"{Colors.YELLOW}✨ flutter黄软广告去除工具 ✨{Colors.END}",
+            ""
         ]
         
         for line in welcome_art:
