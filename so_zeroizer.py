@@ -193,7 +193,7 @@ class SOZeroizer:
             b"loading_page", b"appicon_9", b"index_page_promt",
             b"product_banner", b"home_suspend_", b"bannerImageUrl",
             b"/product", b"/darknet", b"/ai", b"/square",
-            b"/SharePage", b"/domain/app.version",b"jumpUrl"
+            b"/SharePage", b"/domain/app.version",b"jumpUrl",b"announcement"
         ]
         self.total_changes = 0
 
